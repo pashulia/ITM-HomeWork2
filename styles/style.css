@@ -5,7 +5,7 @@ html, body {
 }
 .container {
     width: 320px;
-    height: auto;
+    height: 100vh;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px;
     padding: 23px 24px 32px;
     margin: -5px;
@@ -32,7 +32,6 @@ html, body {
 }
 .content {
     margin-top: 50px;
-    margin-bottom: 236px;
 }
 .content__title {
     color: #7E7E82;
@@ -63,6 +62,12 @@ html, body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 23px;
 }
 .footer__nav {
     display: flex;
