@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>HomeWork2(Pavel Khegay)</title>
 </head>
 <body>
@@ -48,15 +49,29 @@
             </div>
         </header>
         <div class="content">
-            <h5>Ремонт техники</h5>
+            <p class="content__title">Ремонт техники</p>
             <div class="content__nav">
-                <a class="content__nav_link" href="">Услуги и сервисы</a>
-                <a class="content__nav_link" href="">Корпоративным клиентам</a>
-                <a class="content__nav_link" href="">Продавцам техники</a>
-                <a class="content__nav_link" href="">Партнёрам</a>
-                <a class="content__nav_link" href="">Производителям</a>
-                <a class="content__nav_link" href="">Наши сервисные центры</a>
-                <a class="content__nav_link" href="">Контакты</a>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Услуги и сервисы</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Корпоративным клиентам</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Продавцам техники</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Партнёрам</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Производителям</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Наши сервисные центры</a>
+                </div>
+                <div class="content__nav_link">
+                    <a class="content__nav_text" href="">Контакты</a>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -93,11 +108,48 @@
                 8 800 890 8900
             </p>
             <div class="footer__radio_lang">
-                <input type="radio">ru
-                <input type="radio">en
-                <input type="radio">ch
+                <input type="radio" name="lang" value="ru" id="ru"/>
+                <label for="ru" id="label1">RU</label>
+                <input type="radio" name="lang" value="en" id="en"/>
+                <label for="en" id="label2">en</label>
+                <input type="radio" name="lang" value="ch" id="ch"/>
+                <label for="ch" id="label3">ch</label>
             </div>
         </footer>
     </div>
+    <script>
+        // Получаем ссылки на элементы радио и меток
+        let option1 = document.getElementById("ru");
+        let option2 = document.getElementById("en");
+        let option3 = document.getElementById("ch");
+        let label1 = document.getElementById("label1");
+        let label2 = document.getElementById("label2");
+        let label3 = document.getElementById("label3");
+    
+        // Добавляем обработчики событий для изменения текста метки
+        option1.addEventListener("change", function() {
+            if (option1.checked) {
+                label1.textContent = "RU";
+                label2.textContent = "en";
+                label3.textContent = "ch";
+            }
+        });
+    
+        option2.addEventListener("change", function() {
+            if (option2.checked) {
+                label1.textContent = "ru";
+                label2.textContent = "EN";
+                label3.textContent = "ch";
+            }
+        });
+    
+        option3.addEventListener("change", function() {
+            if (option3.checked) {
+                label1.textContent = "ru";
+                label2.textContent = "en";
+                label3.textContent = "CH";
+            }
+        });
+    </script>
 </body>
 </html>
