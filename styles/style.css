@@ -6,6 +6,9 @@ html, body {
 .container {
     width: 320px;
     height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px;
     padding: 23px 24px 32px;
     margin: -5px;
@@ -20,12 +23,12 @@ html, body {
     margin-left: 17px;
 }
 .nav__search:hover {
-    transition: 2s;
-    filter: grayscale(100%);
+    transition: 5s;
+    filter: blur(20px);
 }
 .nav__exit:hover {
-    transition: 2s;
-    filter: grayscale(100%);
+    transition: 3s;
+    filter:hue-rotate(500deg);
 }
 .nav__search {
     margin-left: 78px;
